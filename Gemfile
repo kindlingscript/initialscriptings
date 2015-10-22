@@ -9,6 +9,9 @@ gem 'pg'
 # Include twitter bootstrap
 gem 'bootstrap-sass', '~> 3.3.4'
 
+# Include simple form functionality to submit quotes
+gem 'simple_form'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
