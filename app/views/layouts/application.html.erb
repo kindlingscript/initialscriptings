@@ -20,12 +20,13 @@
 				</div>
 			<% end %>
 		</div>
-		<div class="col-xs-4 slogan">
-			Splurting out wacky (and sometimes dark) ways you can play with the Sims since 2015
+		<div class="col-sm-4 hidden-xs slogan">
+			splurting out wacky (and sometimes dark) ways you can play with the Sims since 2015
 		</div>
-		<div class="col-xs-5 links">
+		<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
 			<!-- Button trigger modal -->
 			<%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+			&nbsp;&nbsp;
 			<%= link_to 'About', about_path %>
 		</div>
 	</header>
@@ -41,8 +42,9 @@
         
           <%= simple_form_for Quote.new do |f| %>
 	         <div class="modal-body">
-				<%= f.input :saying %>
-				<%= f.input :author %>
+				<%= f.input :saying, :label => "What wacky Sims experience do you want to add?", :placeholder => "Hang out with the Grim Reaper" %>
+				<br />
+				<%= f.input :author, :label => "What's your name?", :placeholder => "Sul Sul Badeesh" %>
         	</div>
         	<div class="modal-footer">
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -68,10 +70,10 @@
 
 <div class="footer">
 	<div class="container">
-		<div class="col-xs-6">
+		<div class="col-xs-12 col-sm-6">
 			<%= link_to "This isn't enough, I need more", root_path, :class => 'next-quote' %>
 		</div>
-		<div class="col-xs-6 footer-blurb">
+		<div class="col-xs-12 col-sm-6 footer-blurb">
 			Simlish app provided by Rebecca Taylor
 		</div>
 	</div>
