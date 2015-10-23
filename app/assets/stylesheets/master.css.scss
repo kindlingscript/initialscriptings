@@ -94,5 +94,9 @@ h2 span {
 }
 
 ::selection {
-  background-color: #e65555;
+  background-color: #e65555; /* For WebKit/Blink browsers like Chrome */
+}
+
+::-moz-selection {
+  background: #e65555;
 }

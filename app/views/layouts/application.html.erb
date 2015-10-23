@@ -37,18 +37,18 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Contribute your own quote!</h4>
+          <h4 class="modal-title" id="myModalLabel">Contribute your own wacky Sims experience!</h4>
         </div>
         
           <%= simple_form_for Quote.new do |f| %>
 	         <div class="modal-body">
-				<%= f.input :saying, :label => "What wacky Sims experience do you want to add?", :placeholder => "Hang out with the Grim Reaper" %>
+				<%= f.input :saying, :label => "You knew YOUR Sims experience got wacky when you...", :placeholder => "started developing a relationship with the Grim Reaper" %>
 				<br />
 				<%= f.input :author, :label => "What's your name?", :placeholder => "Sul Sul Badeesh" %>
         	</div>
         	<div class="modal-footer">
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	          <%= f.submit 'Add Quote', :class => 'btn btn-danger' %>
+	          <%= f.submit 'Add Experience', :class => 'btn btn-danger' %>
           <% end %>
     
         </div>
